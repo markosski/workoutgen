@@ -43,13 +43,16 @@ object Server extends App {
         }
     }
 
+    val host = "0.0.0.0"
+    val port = 8090
+
     val bindingFuture = Http().bindAndHandle(
         index ~ WorkoutRoutes.routes,
-        "localhost",
-        8090)
+        host,
+        port)
 
 
-    println(s"Server online at http://localhost:8090/\nPress RETURN to stop...")
+    println(s"Server online at http://$host:$port/\nPress RETURN to stop...")
     StdIn.readLine() // let it run until user presses return
     bindingFuture
         .flatMap(_.unbind()) // trigger unbinding from the port
