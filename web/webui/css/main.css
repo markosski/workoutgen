@@ -15,6 +15,18 @@
   background-color: #f5f5f5;
 }
 
+#logo {
+  width: 300px;
+  height: 128px;
+  background: url('../img/hiitsmash-wide.png') no-repeat top left;
+  float: none;
+  margin: 0 auto;
+  border-color: #fff;
+  border-width: 2px;
+  border-style: solid;
+  margin-bottom: 20px;
+}
+
 body {
 	padding-bottom: 100px;
 }
@@ -38,7 +50,7 @@ body {
 .splash {
 	padding-top: 20px;
 	padding-bottom: 20px;
-	background: linear-gradient(145deg, #349aed 50%, #34d8ed 100%);
+	background: linear-gradient(145deg, #290e5d 50%, #c74046 100%);
 }
 
 #workout-content {
@@ -46,6 +58,16 @@ body {
 
 }
 
+label {
+  color: #fff;
+}
 
+.fa-info-circle {
+  color: #c74046;
+}
 
+/*.btn-submit {
+  background-color: #c74046; 
+  color: #290e5d;
+}*/
 

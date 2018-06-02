@@ -6,6 +6,7 @@ define(function (require) {
 	var multiselect = require("multiselect");
 
 	$('[data-toggle="popover"]').popover({trigger: 'focus'});
+	$('[data-toggle="tooltip"]').tooltip();
 	$('.selectpicker').selectpicker();
 
 	function getWorkout() {
@@ -16,11 +17,11 @@ define(function (require) {
 		var type = $('#workoutType').val();
 		var exp = $('#workoutExperience').val();
 
-		var url = 'http://localhost:8090/workout/' + type + '/' + time + '/' + exp + '/' + equip.join(',');
+		var url = 'http://34.230.27.92:8090/workout/' + type + '/' + time + '/' + exp + '/' + equip.join(',');
 		var template = $('#workout-template').html();
 
 		mustache.parse(template);
-
+		// $('#workout-content').html('<p>Loading...</p>');
 		$.getJSON(url, function(data) {
 			var rendered = mustache.render(template, data.success);
 
