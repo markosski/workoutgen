@@ -1,0 +1,119 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>HIITSmash - High Intensity Interval Training Workout Generator</title>
+        <meta name="description" content="High Intensity Interval Training Workout Generator.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="node_modules/bootstrap-select-v4/dist/css/bootstrap-select.css">
+
+        <style>
+        </style>
+        <link rel="stylesheet" href="css/main.css">
+
+        <script data-main="app" src="node_modules/requirejs/require.js"></script>
+        <script src="https://platform-api.sharethis.com/js/sharethis.js#property=5b12af9e8e56ee0011c8002a&product=inline-share-buttons"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    </head>
+    <body>
+    <div class="text-center splash">
+      <div class="container">
+        <h1 class="title">HIITSmash</h1><h4 class="title">High Intensity Interval Training Workout Generator</h3>
+        <p></p>
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Workout Type</label>
+            <select class="form-control selectpicker" id="workoutType" name="workout_type">
+              <option value="tabata" selected>Tabata</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Workout Time</label>
+            <select class="form-control selectpicker" id="workoutTime" name="workout_time">
+              <option value="5">5 minutes</option>
+              <option value="10">10 minutes</option>
+              <option value="15" selected>15 minutes</option>
+              <option value="20">20 minutes</option>
+              <option value="25">25 minutes</option>
+              <option value="30">30 minutes</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Experience</label>
+              <a href="#" style="color: #000;"data-toggle="popover" data-content="Higher experience levels include exercises that are of higher technical diffculty and may be more prone to injury." data-placement="top" data-content="Content"><i class="fas fa-info-circle"></i></a>
+
+            <select class="form-control selectpicker" id="workoutExperience" name="workout_exp">
+              <option value="1">Beginner</option>
+              <option value="2" selected>Advanced</option>
+              <option value="3">Expert</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Available Equipment <small>(optional)</small></label>
+            <select class="form-control selectpicker" id="workoutEquipment" name="workout_time" multiple>
+              <option value="barbell">Barbell</option>
+              <option value="dumbbell">Dumbbell</option>
+              <option value="kattlebell">Kattlebell</option>
+              <option value="rings">Rings</option>
+              <option value="pullup-bar">Pullup Bar</option>
+              <option value="jump-rope">Jump Rope</option>
+            </select>
+          </div>
+          <button type="button" class="btn-lg btn-dark btn-submit">Smash It!</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-12 text-center" id="workout-content" style="float: none; margin: 0 auto;">
+          <p>Click button to generate workout!</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="alert alert-secondary col-md-12" role="alert">
+        Workout programs published on this website are for informational use. You should consult your physician or other health care professional before starting this or any other fitness program to determine if it is safe for you.
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 sharethis-inline-share-buttons"></div>
+      </div>
+    </div> 
+    <!-- /container -->
+    <footer class="footer">
+      <div class="container">
+        <span class="text-muted"><a href="index.html">HIITSmash</a> | <a href="about.html">about</a></span>
+      </div>
+    </footer>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+    </script>
+    
+    <script id="workout-template" type="x-tmpl-mustache">
+    <div class="text-center workout-title">
+      <h4>Perform {{sets}} sets, 20s work / 10s rest</h4>
+    </div>
+    <ul class="list-group list-group-flush workout-items">
+      {{#exercises}}
+      <li class="list-group-item">{{name}}</li>
+      {{/exercises}}
+    </ul>
+    </script>
+    </body>
+</html>

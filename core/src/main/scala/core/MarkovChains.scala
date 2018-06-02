@@ -1,9 +1,30 @@
+package core
+
 import scala.collection.mutable.HashMap
+import scala.io.Source
 import scala.math.random
 
 class MarkovChains {
-	val data = HashMap[String, HashMap[String, (Int, Double)]]()
-	val counters = HashMap[String, Int]()
+	var data = HashMap[String, HashMap[String, (Int, Double)]]()
+	private val counters = HashMap[String, Int]()
+
+    def keys: Seq[String] = data.keys.toList
+
+	def load(filePath: String): Unit = {
+        data = HashMap[String, HashMap[String, (Int, Double)]]()
+
+        var counter = 0
+        var prev = ""
+        Source.fromFile(filePath).getLines.foreach( line => {
+            if (line.trim != "" && prev != "") {
+                val template = line.split(" ")(0)
+
+                add(prev, template)
+                prev = template
+            }
+            else prev = line.split(" ")(0)
+        })
+    }
 
 	def add(a: String, b: String): Unit = {
 		data.get(a) match {

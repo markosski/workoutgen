@@ -1,0 +1,47 @@
+all-high-push
+all-med-all
+upper-med-pull
+all-med-all
+upper-low-push
+upper-low-push
+core-low-all
+upper-med-push
+all-high-push
+
+all-high-push
+lower-med-push
+core-low-all
+upper-med-pull
+upper-med-push
+all-med-all
+all-low-all
+all-high-push
+
+lower-med-push
+upper-med-push
+all-high-all
+core-med-all
+lower-med-push
+
+lower-med-push bodyweight squats
+upper-med-push elevated pushups
+lower-low-push lunges
+all-high-all jumping jacks
+all-high-push burpees
+lower-med-push
+
+all-high-push burpees
+all-high-all jumping jacks
+core-med-all mountain climbers
+lower-high-push squat jumps
+all-high-push
+
+core-low-all situps
+lower-high-push jump squats
+upper-med-push pushups
+lower-high-push jumping lunges
+upper-low-push tricep dips
+all-high-push burpees
+core-low-all
+
+

@@ -1,0 +1,29 @@
+{
+  "name": "hiitsmash",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "bootstrap-select-v4": "^1.12.4",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "mustache": "^2.3.0",
+    "popper.js": "^1.14.3",
+    "requirejs": "^2.3.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wolox/frontend-bootstrap.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wolox/frontend-bootstrap/issues"
+  },
+  "homepage": "https://github.com/Wolox/frontend-bootstrap#readme"
+}
