@@ -25,15 +25,17 @@ define(function (require) {
 		$.getJSON(url, function(data) {
 			var rendered = mustache.render(template, data.success);
 
+			$('#workout-content').hide();
 			$('#workout-content').html(rendered);
+			$('#workout-content').fadeIn();
 		});
 	};
 
    	$('.btn-submit').on('click', function(event) {
    		event.preventDefault();
    		getWorkout();
-   		$('html, body').animate({
-	        scrollTop: $("#workout-content").offset().top
-	    }, 200);
+   		// $('html, body').animate({
+	    //     scrollTop: $("#workout-content").offset().top
+	    // }, 200);
    	});
 });
