@@ -24,7 +24,8 @@ lazy val api = (project in file("api"))
         libraryDependencies += scalaTest % Test,
         libraryDependencies ++= json,
         libraryDependencies ++= akkaHttp,
-        libraryDependencies ++= logging
+        libraryDependencies ++= logging,
+        libraryDependencies += depPolly
     ).dependsOn(core)
 
 lazy val core = (project in file("core"))

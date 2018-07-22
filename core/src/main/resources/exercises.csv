@@ -3,15 +3,15 @@
 3,3,Pushups,med,1,bodyweight,upper,push
 4,4,Plank,low,1,bodyweight,core,all
 5,5,Pull-ups,high,2,bodyweight,upper,pull
-6,6,HSPU,med,1,bodyweight,upper,push
+6,6,Handstand Pushups,med,1,bodyweight,upper,push
 7,7,Lunges,low,1,bodyweight,lower,push
 8,8,L-sits,low,1,bodyweight,core,all
 9,9,Hanging Knee Raise,low,2,pullup-bar,core,all
 10,10,Windshield Wipers,low,1,bodyweight,core,all
 11,11,Scissors,low,1,bodyweight,core,all
-12,12,Kattlebell Swings,med,1,kattlebell,all,all
-13,13,Kattlebell Squats,med,1,kattlebell,lower,push
-14,14,Kattlebell Clean,med,2,kattlebell,all,all
+12,12,Kettlebell Swings,med,1,kettlebell,all,all
+13,13,Kettlebell Squats,med,1,kettlebell,lower,push
+14,14,Kettlebell Clean,med,2,kettlebell,all,all
 15,15,Clean Squat,high,3,barbell,lower,push
 16,16,Clean,high,3,barbell,all,all
 17,17,Dumbbell Snatch,high,2,dumbbell,all,all
@@ -22,14 +22,14 @@
 22,22,L-sit (rings),low,2,rings,core,all
 23,23,Jump Rope,med,1,jump-rope,all,all
 24,24,Double-unders,med,3,jump-rope,all,all
-25,25,Med Ball Squat,high,1,med-ball,all,all
-26,26,Med Ball Squat Clean,high,1,med-ball,all,all
+25,25,Med Ball Squats,high,1,med-ball,all,all
+26,15,Med Ball Squat Cleans,high,1,med-ball,all,all
 27,27,Pistol Squats,med,3,bodyweight,lower,push
 28,28,Pike Pushups,low,1,bodyweight,upper,push
 29,29,Archer Pushups,low,3,bodyweight,upper,push
 30,30,Mountain Climbers,med,1,bodyweight,core,all
 31,31,Squat Jumps,high,1,bodyweight,lower,push
-32,2,Burpee Jump Over,high,1,bodyweight,all,all
+32,2,Burpee Jump Overs,high,1,bodyweight,all,all
 34,3,Elevated Pushups,med,2,bodyweight,upper,push
 35,35,Ring Rows,med,1,rings,upper,pull
 36,36,Wide Grip Chin-ups,high,2,pullup-bar,upper,pull
@@ -45,29 +45,31 @@
 46,3,Narrow Pushups,low,1,bodyweight,upper,push
 47,3,Diamond Pushups,low,2,bodyweight,upper,push
 48,48,Superman,low,1,bodyweight,core,all
-49,49,Flutter Kick,low,1,bodyweight,core,all
-50,50,Side Plank,low,1,bodyweight,core,all
+49,49,Flutter Kicks,low,1,bodyweight,core,all
+50,50,Side Planks,low,1,bodyweight,core,all
 51,45,Hamstring Bridge One Leg,low,1,bodyweight,lower,all
 52,52,Squat Shoulder Press (dumbbells),high,1,dumbbell,all,push
-53,52,Squat Shoulder Press (kattlebell),high,1,kattlebell,all,push
+53,52,Squat Shoulder Press (kettlebell),high,1,kettlebell,all,push
 53,52,Squat Shoulder Press (barbell),high,1,barbell,all,push
 54,54,Side Crunches,low,1,bodyweight,core,all
 55,1,Squats (barbell),high,1,barbell,lower,push
-56,1,Squats (kattlebell),med,1,kattlebell,lower,push
+56,1,Squats (kettlebell),med,1,kettlebell,lower,push
 57,2,Half Burpees,high,1,bodyweight,all,push
-58,2,Side Jump Burpee,high,1,bodyweight,all,push
-59,2,Lunge Jump Burpee,high,1,bodyweight,all,push
+58,2,Side Jump Burpees,high,1,bodyweight,all,push
+59,2,Lunge Jump Burpees,high,1,bodyweight,all,push
 60,4,Plank-ups,med,1,bodyweight,core,all
 61,61,Jumping Jacks,high,1,bodyweight,all,all
 62,3,Plyo Pushups,med,2,bodyweight,upper,push
 63,63,Russian Twists,low,1,bodyweight,core,all
 64,35,Under Bar Rows,med,1,barbell,upper,pull
 65,65,Cossack Squats,med,1,bodyweight,lower,push
-66,65,Cossack Squats (kattlebell),med,1,kattlebell,lower,push
+66,65,Cossack Squats (kettlebell),med,1,kettlebell,lower,push
 67,65,Cossack Squats (barbell),med,1,barbell,lower,push
 68,21,Muscle-ups (pullup bar),high,3,pullup-bar,all,pull
 69,3,Reverse Grip Pushups,med,1,bodyweight,upper,push
-70,70,Deadlift,high,3,barbell,all,all
+70,70,Deadlifts,high,3,barbell,all,all
 71,71,Bent Over Barbell Rows,med,2,barbell,upper,pull
-72,72,Upright Barbell Row,low,1,barbell,upper,pull
-73,73,Weight Plate Front Raise,med,1,barbell,upper,pull
+72,72,Upright Barbell Rows,low,1,barbell,upper,pull
+73,73,Weight Plate Front Raises,med,1,barbell,upper,pull
+74,73,Kettlebell Front Raises,med,1,kettlebell,upper,pull
+75,15,Kettlebell Squat Cleans,high,1,kettlebell,all,all

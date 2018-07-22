@@ -35,10 +35,10 @@ class WorkoutTabata(val time: Int) extends Workout {
     val config = Map(
         5 -> List((2, 5), (5, 2)),
         10 -> List((4, 5), (5, 4)),
-        15 -> List((6, 4), (4, 6)),
-        20 -> List((5, 6), (6, 5)),
-        25 -> List((5, 5)),
-        30 -> List((5, 6), (6, 5), (3, 10))
+        15 -> List((5, 6), (6, 5), (4, 7)),
+        20 -> List((5, 8)),
+        25 -> List((5, 10), (6, 8)),
+        30 -> List((5, 12), (6, 10))
     )
 
     assert(config.keys.toList.contains(time), s"Valid workout times are: ${config.keys.mkString(", ")}")

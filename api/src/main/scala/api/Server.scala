@@ -47,7 +47,7 @@ object Server extends App {
     val port = 8090
 
     val bindingFuture = Http().bindAndHandle(
-        index ~ WorkoutRoutes.routes,
+        index ~ WorkoutRoutes.routes ~ SpeakRoutes.routes,
         host,
         port)
 
